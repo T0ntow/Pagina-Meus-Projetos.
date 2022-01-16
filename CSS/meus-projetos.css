@@ -8,8 +8,9 @@ body{
     background-image: linear-gradient(to right, #658adb, #2c0094);
     font-family: cursive;
 }
-
 /* aside */
+
+ 
 
 .aside a{
     margin-top:180px;
@@ -86,7 +87,10 @@ opacity: 0.8;
 }
 .container-h1 h1{
     font-size: 25px;
-    border-radius: 89p;
+    border-radius: 89px;
+
+    margin-bottom: 100px;
+
 
     color: #000000;
 }
@@ -96,23 +100,34 @@ opacity: 0.8;
 
 
 .linhas{
-    margin: 50px 0px;
-    display: flex;
-    justify-content: space-evenly;
+    margin: 50px auto;
 
     align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+
+
+
 
 .cards{
 
     background-color: #8ba6e0;
-    border-bottom: 5px solid #660692;
+    border-bottom: 4px solid #660692;
+    border-right: 2px solid #660692;
     
-    width: 250px;
+    max-width: 220px;
+    width: 220px;
+    max-height: 230px;
+    height: 205px;
+
     border-radius: 6px;
 
-    margin: 60px 0 0 4px;
-    padding: 20px 40px;
+    margin: 20px auto;
+
 
 }
 
@@ -123,19 +138,18 @@ opacity: 0.8;
 
 .cards h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     
 }
 .cards p{
-    text-indent: 4px;
     font-size: 15px;
     text-align: center;
-    
     margin: auto;
     
 }
 .cards img{
-    margin-top: 20px;
+    margin-top: 23px;
+    align-items: flex-end;
     width: 115px;
 }
 .cards .icon{
@@ -161,17 +175,28 @@ height: 8px;
 box-shadow: 0px 0px 11px 5px rgba(130, 52, 255, 0.253);
 }
 
-@media screen and (max-width: 930px) {
+
+@media screen and (max-width: 800px) {
     .linhas {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: auto;
     }
-    .cards {
-        padding: 50px 80px 0px 80px;
-        text-align: center;
-        padding: 50px 80px;
+}
+
+@media screen and (max-width: 670px) {
+    .linhas {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        padding: 40px;
     }
 
+
 }
+
+
 
 @media screen and (max-width: 470px) {
 
