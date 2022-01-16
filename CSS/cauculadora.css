@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HeaderMYP */
+
+
+.headerMyP {
+    background-image: linear-gradient(to right, #8ba6e0, #6200ff);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.89); 
+
+}
+
+.headerMyP .container-logosMyP {
+    margin: 0 20px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+
+}
+
+.headerMyP .container-logosMyP .logosMyP {
+    margin-left:4px;
+    margin-right: 5px;
+    display: flex;
+    height: 40px;
+}
+#logoMyP{
+    height: 70px;
+    
+}
+
+#logoMyP:hover 
+
+{
+    
+color: rgb(255, 13, 13);
+transition: 0.5s;
+
+opacity: 0.8;
+
+}
+/*  */
+
+.fundo{
+    background-image: linear-gradient(to right, #658adb, #2c0094);
+    color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: 100%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.fundo h1{
+    background-color: #8ba6e0;
+    color: black;
+
+    text-align: center;
+    font-size: 32px;
+    
+    width: 380px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.box { 
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    background: #8ba6e0cc;
+    font-size: 18px;
+
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    
+    border-radius: 10px;
+    
+}
+.calculadora table{
+    text-align: center;
+    margin: auto;
+}
+
+.calculadora .botao{
+    color: rgb(255, 255, 255);
+    background-color: rgba(3, 3, 3, 0.74);
+    font-size: 18px;
+
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+
+    cursor: pointer;
+    border: 0.1mm solid rgba(65, 65, 65, 0.445);
+}
+.botao:hover{
+    background-color: rgb(52, 61, 185);
+}
+
+#display{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.603);
+    display: table;
+
+    margin: 4px auto 10px auto;
+    height: 40px;
+}    
+#text-display{
+    color: black;
+    font-size: 25px;
+    text-align: right;
+    text-align: right;
+
+    display: table-cell;
+    vertical-align: middle;
+    width: 210px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .headerMyP{
+    display: none;
+    }
+    .fundo h1{
+        font-size: 140%;
+        margin: auto;
+    }
+
+}
+@media screen and (max-width: 450px) {
+
+    
+}
+@media screen and (max-width: 380px) {
+
+    .fundo h1{
+        font-size: 130%;
+        margin: auto;
+        width: 230px;
+    }
+
+}
+@media screen and (max-width: 310px) {
+
+    .calculadora{
+        padding: 8px;
+    }
+    .calculadora .botao{
+        width: 47px;
+        height: 47px;
+    }
+
+}
+
+
