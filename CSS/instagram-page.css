@@ -8,19 +8,20 @@ body{
 }
 
 main{
+    background-color: rgb(250, 250, 250);
+
     align-items: center;
     display: flex;
-    background-color: rgb(250, 250, 250);
 }
 article{
-
-    flex-direction: row;
+    max-width: 935px;
+    width: 100%;
+    margin: 32px auto 0;
 
     justify-content: center;
-    margin: 32px auto 0;
-    max-width: 935px;
     padding-bottom: 32px;
-    width: 100%;
+
+    flex-direction: row;
 }
 
 .img-celular{
@@ -42,9 +43,9 @@ article{
 }
 #img-frente{
     height: 427px;
+    width: 240px;
     left: 0;
     position: absolute;
-    width: 240px;
 }
 .container-lado{
     justify-content: center;
