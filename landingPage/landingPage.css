@@ -11,7 +11,7 @@ body{
 
 /* header */
 header{
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.048);
 
     height:10vh;
     width: 100vw;
@@ -19,7 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
 
-    position: fixed;
+    position: fixed;    
     z-index: 1;
     
 }
@@ -52,6 +52,7 @@ header{
 }
 .nav-list button:hover{
     background-color: rgb(41, 41, 41);
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -60,27 +61,28 @@ header{
 /* Section-1 */
 
 .section-1{
-    height: 75vh;
+    height:77vh;
     text-align: center;
     
 }   
 .imagem{
     position: relative;
-    height: 100%;  
+    height: 100%;
     overflow: hidden;
+
 }
 .imagem img{
-
-    -webkit-mask-image: linear-gradient(to top, transparent 15%, rgba(0, 0, 0, 0.432) 95%);
+    background-color: #001aff42;
     
     position: absolute;
 
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);  
-    margin-top: 10vh;
     min-width: 100%;
     height: 100%;
+
+    opacity: 60%;
 }
 .container-1{  
     position: absolute;
@@ -90,6 +92,7 @@ header{
 
     color: white;
     min-width: 320px;
+
 }
 .container-1 h1{
     color: #164DF2;
@@ -120,6 +123,7 @@ header{
 .container-1 button:hover{
     background-color: rgb(41, 41, 41);
     cursor: pointer;
+    transition: 0.5s;
 }   
 hr{
     background-color: white;
@@ -132,6 +136,7 @@ hr{
 /* cards */
 
 .linhas{
+    background-color: #080e47;
     align-items: center;
     justify-content: center;
 
@@ -140,16 +145,14 @@ hr{
 
     display: flex;
     flex-wrap: wrap;
-    background-color: #090e3a;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 1%, rgb(0, 0, 0)25%);
 }
 h2{
     color: #164DF2;
+    background-color: #090e3a9c;
     text-align: center;
 
     font-size: 30px;
 
-    margin-top: 40px;
 }
 
 .cards{
@@ -199,8 +202,8 @@ span li {
 
 .cards img{
     margin-top: 23px;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
 .cards .icon{
     text-align: center;    
@@ -361,6 +364,11 @@ span li {
         width: 90px;
         height: 90px;
         align-items: flex-end;
+    }
+    span li {
+        font-size: 14px;
+        width: 220px;
+
     }
     
 }
