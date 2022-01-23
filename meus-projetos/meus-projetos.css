@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 body{
@@ -11,30 +10,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* aside */
 
-
-.aside a{
-    color: rgb(255, 255, 255);
-    box-shadow: inset -1px 3px 8px 5px #0000006b, 2px 5px 16px 0px #ffffff2d, 5px 5px 15px 5px #0000002f;
-
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-
-    margin-top:180px;
-    padding: 7px;
-    width: 320px;
-    left: -280px;
-    position: absolute;
-    border-radius: 10px;
-    
-    transition: 0.4s;
-}
-
-aside a:hover{
-    left:0;
-}
 /* HeaderMYP */
 
 
@@ -143,7 +119,7 @@ opacity: 0.8;
     text-align: center;
     font-family: 'Lobster Two', cursive;
     max-width: 320px;
-    margin: 40px auto;
+    margin: 10px auto;
     border-radius: 6px;
 }
 .container-h1 h1{
@@ -151,12 +127,69 @@ opacity: 0.8;
 
     font-size: 25px;
     
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     border-radius: 89px;
 }
-/*  */
 
-/*container-conteudo */
+
+/* Sobre Mim */
+
+
+#elemento-1{
+    background-color: #0000006c;
+    padding: 75px 0;
+}
+.sobreMim{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.lateral-sobre-mim{
+    color: white;
+}
+.sobreMim h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.sobreMim p{
+
+    text-align: center;
+    width: 400px;
+}
+.sobreMim img{
+    box-shadow: -7px 7px 0px 1px #0142ce;
+    height: 260px;
+}
+
+
+/* Principais Projetos */
+
+
+.container-cards-principais{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.cards-projetos-principais{
+    background-color: #1B1B1B;
+    border-bottom: 5px solid #3071F2;
+    border-right: 4px solid #3071F2;
+
+    width: 95vw;
+    height: 35vh;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.conteudo-principais-projetos .icon img{
+    height: 30vh;
+
+}
+
+
+/* Mini Projetos */
 
 
 .linhas{
@@ -169,10 +202,7 @@ opacity: 0.8;
     flex-wrap: wrap
 }
 
-
-
-
-.cards{
+.linhas .cards{
 
     background-color:#1b1b1b;
     border-bottom: 4px solid #3071F2;
@@ -180,27 +210,33 @@ opacity: 0.8;
     
     max-width: 220px;
     width: 220px;
-    max-height: 230px;
+    max-height: 230px;      
     height: 205px;
     margin: 20px auto;
 
     border-radius: 6px;
 }
 
-.cards a{
+.cards-principais-projetos{
+    background-color:#1b1b1b;
+    width: 90vw;
+    height: 250px;
+
+}
+.linhas .cards a{
     color: rgb(255, 255, 255);
 
     text-decoration: none;
 }
 
-.cards h2{
+.linhas .cards h2{
     color: #3a3de7;
     text-align: center;
     font-size: 17px;
 
     
 }
-.cards p{
+.linhas .cards p{
     color: #3071F2;
 
     font-size: 15px;
@@ -208,19 +244,19 @@ opacity: 0.8;
 
     margin: auto;
 }
-.cards img{
+.linhas .cards img{
     margin-top: 23px;
     width: 115px;
     align-items: flex-end;
 }
-.cards .icon{
+.linhas .cards .icon{
     text-align: center;
     max-height: 125px;
     align-items: center;
 
     
 }
-.cards:hover{
+.linhas .cards:hover{
     background-color:#1b1b1b;
 }
 
