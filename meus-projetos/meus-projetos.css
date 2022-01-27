@@ -143,10 +143,18 @@ opacity: 0.8;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-
+    color: white;
+    
 }
+.sobreMim h3{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
 .lateral-sobre-mim{
     color: white;
+
 }
 .sobreMim h1{
     text-align: center;
@@ -162,10 +170,31 @@ opacity: 0.8;
     height: 260px;
 }
 
+.sobreMim h4{
+    text-align: center;
+    width: 300px;
+}
+.sobreMim .conhecimentos {
+    padding-left: 70px;
+    border-left: 5px solid black;
+}
+.sobreMim .conhecimentos .linguagens h4{
+    margin-bottom: 20px;
+    height: 100px;
+    width: 350px;
+    flex-direction: row;
 
+    border-radius: 5px;
+}
+
+.sobreMim .conhecimentos h3{
+    margin-bottom: 20px;
+}
 /* Projetos Principais */
 
-
+#elemento-2{
+    margin-top: 50px;
+}
 
 .cards-projetos-principais{
     background-color: #1B1B1B;
@@ -247,7 +276,9 @@ opacity: 0.8;
     background-color: red;
 }
 /* Mini Projetos */
-
+#elemento-3{
+    margin-top: 150px;
+}
 
 .linhas{
     align-items: center;
