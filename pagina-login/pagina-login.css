@@ -162,6 +162,20 @@ h3{
 .container-login .conteudo-login{
     width: 250px;
 }
+.senha{
+    display: flex;
+    width: 265px;
+}
+.senha img{
+    cursor: pointer;
+    width: 22px;
+    transform: translateX(-30px);
+    color: rgb(255, 0, 43);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
 input{
     color: white;
     background-color: rgba(0, 0, 0, 0.555);
@@ -170,9 +184,9 @@ input{
     outline: none;
 
     margin: 5px 0 3px 5px;
-    width: 240px;
+    width: 95%;
     height: 28px;
-    border: 0 none;  
+    border: none; 
 }
 
 .container-login button{

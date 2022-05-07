@@ -42,15 +42,23 @@
         <div class="conteudo-login">
           <h2>Login</h2>
 
-          <input type="text" placeholder="email">
-          <input type="password" placeholder="senha">
+          <form  action="/" method="post" id="signup-form">
 
-          <button>Enviar</button>
+            <input type="email" placeholder="email">
+            <div class="senha">
+              <input type="password" placeholder="senha" id="pass" maxlength="20">
+              <img src="assets/eye.svg" alt="olho" id="olho">
+            </div>
+            <button type="submit">Enviar</button>
+
+          </form>
+         
 
           <div class="container-ou">
 
             <hr id="hr1">
             <div id="ou">
+          
               <p>OU</p>
             </div>
             <hr id="hr2">
@@ -66,7 +74,7 @@
         </div>
       </div>
     </div>
-    
+    <script src="login.js"></script>
 </body>
 
 </html>

@@ -97,37 +97,6 @@ opacity: 0.8;
     height: 80px;
 }
 
-/* Asides(icones laterais) */ 
-
-.aside a{
-    
-    color: #fff;
-    box-shadow: inset -1px 3px 8px 5px #ecececab, 2px 5px 16px 0px #666666f1, 5px 5px 15px 5px #ffffff56;
-
-    font-size: 14px;
-    text-align: left;
-    text-decoration: none;
-
-    margin-top: 210px;
-    padding: 7px;
-    width: 320px;
-
-    position: absolute;
-    left: -280px;
-    border-radius: 0 15px 15px 0;
-    
-    transition: 0.4s;
-}
-
-aside a:hover{
-    left:0;
-}
-
-.fotos{
-    background-color: #0e0e0e;
-    top: 0px;
-}
-
 
 /* Header MP */
 

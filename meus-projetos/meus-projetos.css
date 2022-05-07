@@ -175,9 +175,23 @@ opacity: 0.8;
 }
 .sobreMim .conhecimentos {
     width: 40vw;
-    padding-left: 70px;
-    border-left: 5px solid black;
+    padding: 30px;
 }
+.conhecimentos{
+    animation: 1s infinite;
+    animation-direction: alternate;
+    border-radius: 7%;
+    -webkit-animation-name: circle;
+}
+@keyframes circle{
+    0%{
+        border-left: 7px #4e86ff solid;
+    }
+    100%{
+        border-left: 7px #5326f5 solid;
+    }
+}
+
 .sobreMim .conhecimentos .linguagens h4{
     margin-bottom: 20px;
     height: 100px;
@@ -190,10 +204,6 @@ opacity: 0.8;
     margin-bottom: 20px;
 }
 /* Projetos Principais */
-
-#elemento-2{
-    margin-top: 50px;
-}
 
 .cards-projetos-principais{
     background-color: #1B1B1B;
@@ -230,8 +240,6 @@ opacity: 0.8;
     background-color: #1C1C1C;
     border-bottom: 5px solid #3071F2;
     border-right: 3px solid #3071F2;
-
-
     
     position: absolute;
     margin-top: -28px;
@@ -276,7 +284,7 @@ opacity: 0.8;
 }
 /* Mini Projetos */
 #elemento-3{
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 .linhas{
@@ -295,8 +303,7 @@ opacity: 0.8;
     border-bottom: 4px solid #3071F2;
     border-right: 2px solid #3071F2;
     
-    max-width: 220px;
-    width: 220px;
+    width: 235px;
     max-height: 230px;      
     height: 205px;
     margin: 10px auto;
@@ -338,60 +345,28 @@ a{
     width: 115px;
     align-items: flex-end;
 }
-.cards:hover img{
-    opacity: 60%;
-}
+
 
 .linhas .cards .icon{
     text-align: center;
     max-height: 125px;
 }
-.linhas .cards:hover{
-    background-color:#1b1b1b;
+
+.cards:hover{
+    animation: 0.5s infinite;
+    -webkit-animation-name: pulse;
+    animation-delay: .1s;
+    animation-direction: alternate;
 }
 
-.cards::before {
-    content: '';
-
-    top: 5px;
-    bottom: 5px;
-    left: 3%;
-
-    border-top: solid 1px #fff;
-    border-bottom: solid 1px #fff;
-    border-left: solid 1px #fff;
-
-    position: absolute;
-    transform: scale(1, 0);
-    transition: ease-out 0.25s;
-    transition-delay: 0.15s;
-}
-
-.cards:hover::before {
-    transform: scale(1 , 1);
-}
-
-.cards::after {
-    content: '';
-
-    top: 5px;
-    bottom: 5px;
-    
-    left: 97%;
-    right: 97%;
-
-    border-top: solid 1px #fff;
-    border-bottom: solid 1px #fff;
-    border-right: solid 1px #fff;
-
-    position: absolute;
-    transform: scale(1, 0);
-    transition: ease-out 0.25s;
-    transition-delay: 0.15s;
-}
-
-.cards:hover::after {
-    transform: scale(1);
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0px -2px 8px 2px #1f88ff0e, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+   
+    100% {
+        box-shadow: 0px -2px 8px 2px #1f88ff, 2px 5px 16px 0px #0012b1, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
 }
 
 hr{
@@ -454,12 +429,16 @@ footer{
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 600px) {
     .linhas {
         display: grid;
         grid-template-columns: 1fr;
         margin: auto;
         padding: 40px;
+    }
+    .linhas .cards{
+        width: 65vw;
+        height: 250px;
     }
 }
 
@@ -483,6 +462,17 @@ footer{
     .headerMyP .container-logosMyP {
         margin: auto;
         justify-content: center;
+    }
+
+    .container-footer{
+        flex-direction: column;
+    }
+    .container-footer span{
+        margin: 0;
+        padding-bottom: 15px;
+     }
+    .container-footer a span{
+       display: none;
     }
 }
 
